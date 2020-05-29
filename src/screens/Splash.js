@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, Platform } from 'react-native';
 
 export default class Splash extends Component {
   componentDidMount = () => {
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     image: {
         height: 200,
         width: 200,
-        top: 200,
+        top: Platform.OS === 'ios'? 300 : 200,
         resizeMode: 'contain',
         alignSelf: 'center'
     }

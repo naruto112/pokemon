@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 
-export default class List extends Component {
+import styles from './styles';
+
+export default class Detail extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -10,7 +12,7 @@ export default class List extends Component {
   render() {
     return (
       <View>
-        <Text>  </Text>
+        <Text> Detail !</Text>
       </View>
     );
   }
