@@ -6,16 +6,22 @@ import {createStackNavigator} from 'react-navigation-stack';
 
 import List from './screens/List';
 import Detail from './screens/Detail';
+import Splash from './screens/Splash';
 
-StatusBar.setBackgroundColor('#03d360');
-StatusBar.setBarStyle('light-content');
 
 const Router = createAppContainer(
   createStackNavigator({
+      Splash: {
+        screen: Splash,
+        navigationOptions: {
+          headerShown: false,
+        }
+      },
       List: {
           screen: List,
           navigationOptions: {
-              headerTitle: <Image style={{ width: 350, height: 200, top: 50, alignSelf: "center"}} source={require('./assets/logo.png')}/>,
+              headerTitle: () => <Image style={{ width: 200, height: 200, top: 20, alignSelf: "center"}} source={require('./assets/logo.png')}/>,
+              headerLeft: () => false,
               headerStyle: {
                   backgroundColor: '#03d360',
               }
@@ -26,8 +32,8 @@ const Router = createAppContainer(
           navigationOptions: {
               title: '',
               headerTintColor: 'white',
+              // headerLeft: true,
               headerStyle: {
-
                   backgroundColor: '#03d360',
               }
           },
