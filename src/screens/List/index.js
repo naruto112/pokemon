@@ -1,5 +1,5 @@
 import React, {useState, Component} from 'react';
-import {View, Text, TouchableOpacity, FlatList, Image} from 'react-native';
+import {View, Text, TouchableOpacity, FlatList, Image, Alert} from 'react-native';
 import styles from './styles';
 import api from '../../service/api';
 
@@ -46,6 +46,9 @@ export default class List extends Component {
       poke.push({...obj});
 
     })
+
+
+    console.log(this.state.pokemon);
 
     this.setState({...this.state.pokemon,  pokemon: poke});
     this.setState({ loading: false });

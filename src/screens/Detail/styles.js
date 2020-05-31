@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform } from 'react-native'
 
 export default StyleSheet.create({
     container: {
@@ -40,8 +40,8 @@ export default StyleSheet.create({
         fontWeight: 'bold'
     },
     safeAreaView: {
-        width: 345,
-        height: 250,
+        width: Platform.OS === 'android'? 290: 345,
+        height: Platform.OS === 'android'? 150: 250,
         marginTop: 10,
     },
     detailText: {
