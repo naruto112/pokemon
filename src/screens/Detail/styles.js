@@ -6,14 +6,6 @@ export default StyleSheet.create({
         paddingHorizontal: 24,
         paddingTop: 20,
     },
-
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-
-    },
-
     detail: {
         padding: 10,
         borderRadius: 8,
@@ -25,43 +17,8 @@ export default StyleSheet.create({
         padding: 25,
         borderRadius: 8,
         backgroundColor: '#FFF',
-        // marginBottom: 16,
         marginTop: 10,
     },
-
-    detailProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold',
-        marginTop: 24
-    },
-
-    incidentValue: {
-        marginTop: 8,
-        fontSize: 15,
-        color: '#737380'
-    },
-
-    contactBox: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#FFF',
-        marginBottom: 16,
-    },
-
-    heroTitle: {
-        fontWeight: 'bold',
-        fontSize: 20,
-        color: '#13131a',
-        lineHeight: 30
-    },
-
-    heroDescription: {
-        fontSize: 15,
-        color: '#737380',
-        marginTop: 16
-    },
-
     actions: {
         marginTop: 16,
         flexDirection: 'row',
@@ -81,5 +38,13 @@ export default StyleSheet.create({
         color: '#FFF',
         fontSize: 15,
         fontWeight: 'bold'
+    },
+    safeAreaView: {
+        width: 345,
+        height: 250,
+        marginTop: 10,
+    },
+    detailText: {
+        marginBottom: 50
     }
 });

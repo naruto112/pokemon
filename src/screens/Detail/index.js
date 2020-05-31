@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import {View, Text, TouchableOpacity, Image, Alert} from 'react-native';
+import {View, ScrollView, SafeAreaView, Text, TouchableOpacity, Image, Alert} from 'react-native';
 import api from '../../service/api';
 import styles from './styles';
 
@@ -45,10 +45,11 @@ export default class Detail extends Component {
                   source={{uri: this.state.pokemonDetail.image }} 
                   style={{ width: 100, height: 100, alignSelf: 'center' }}
                 />
-                <Text style={[styles.detailProperty, { marginTop: 0 }]}></Text>
-                <View style={styles.detailDescription}>
-                    <Text>{this.state.detail}</Text>
-                </View>
+                <SafeAreaView style={styles.safeAreaView}>
+                  <ScrollView style={styles.detailDescription}>
+                      <Text style={styles.detailText}>{this.state.detail}</Text>
+                  </ScrollView>
+                </SafeAreaView>
                 <View style={styles.actions}>
                     <TouchableOpacity style={styles.action} onPress={() => this.handleUtil()}>
                         <Text style={styles.actionText}>Util</Text>

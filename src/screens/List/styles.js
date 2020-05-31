@@ -6,55 +6,13 @@ export default StyleSheet.create({
         paddingHorizontal: 24,
         paddingTop: 50
     },
-
-    header: {
-        flexDirection: "row",
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    },
-
-    headerText: {
-        fontSize: 15,
-        color: '#737380'
-    },
-
-    headerTextBold: {
-        fontWeight: 'bold'
-    },
-
-    title: {
-        fontSize: 30,
-        marginBottom: 16,
-        marginTop: 48,
-        color: '#13131a',
-        fontWeight: 'bold'
-    },
-
-    description: {
-        fontSize: 16,
-        lineHeight: 24,
-        color: '#737380'
-    },
-
-    incidentList: {
-        marginTop: 32,
-
-    },
-
-    incident: {
+    list: {
         padding: 40,
         borderRadius: 8,
         backgroundColor: '#FFF',
         marginBottom: 16,
 
     },
-
-    incidentProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold',
-    },
-
     labelValue: {
         marginTop: 20,
         fontSize: 18,
