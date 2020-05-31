@@ -29,7 +29,7 @@ export default class Detail extends Component {
   }
 
   handleUtil = () => {
-    Alert.alert("OBA", "Agora no Pokemon GO e Boa sorte !");
+    Alert.alert("OBA", "Pokemon GO e Boa sorte !");
   }
 
   render() {
