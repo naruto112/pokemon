@@ -56,8 +56,8 @@ export default StyleSheet.create({
     },
 
     labelValue: {
-        marginTop: 8,
-        fontSize: 20,
+        marginTop: 20,
+        fontSize: 18,
         marginBottom: 24,
         color: '#403f3f',
         fontWeight: 'bold'

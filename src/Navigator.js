@@ -30,9 +30,9 @@ const Router = createAppContainer(
       Detail: {
           screen: Detail,
           navigationOptions: {
-              title: '',
+            headerTitle: () => <Image style={{ width: 200, height: 200, top: 20, alignSelf: "center"}} source={require('./assets/logo.png')}/>,
               headerTintColor: 'white',
-              // headerLeft: true,
+              headerLeft: () => false,
               headerStyle: {
                   backgroundColor: '#03d360',
               }
